@@ -1,4 +1,5 @@
 import React from "react";
+import Product from "./Components/Products";
 
 export default function Main (props) {
     const {products} = props;
@@ -11,5 +12,5 @@ export default function Main (props) {
                 )) }
             </div>
         </main>
-    )
+    );
 } 
