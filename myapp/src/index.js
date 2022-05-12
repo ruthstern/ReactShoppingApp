@@ -1,14 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import LandingPage from './Pages/index'
 import reportWebVitals from './reportWebVitals';
-
+import {DetailView}  from './Pages/DetailView';
+import { 
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="details" element={<DetailView />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

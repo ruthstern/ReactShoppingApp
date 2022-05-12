@@ -10,6 +10,7 @@ export default function Header (props) {
             </div>
             <div>
                 <a href="#/cart">Cart</a> <a href="#/SignIn">SignIn</a>
+
             </div>
         </header>
     ) ;

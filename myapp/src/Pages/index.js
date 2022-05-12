@@ -1,12 +1,12 @@
 import React from 'react';
-import Header from './Components/Header';
-import Main from './Components/Main';
-import Basket from './Components/basket';
-import Data from "./Data";
+import Main from '../Components/Main';
+import Basket from '../Components/Basket';
+import Data from "../Data";
 import {useState} from "react";
+import ButtonAppBar from '../Components/ButtonAppBar';
 
 
-function App() {
+function LandingPage() {
   const { products } = Data;
   const [cartItems, setCartItems] =useState ([]);
   const onAdd = (product) =>{
@@ -24,14 +24,14 @@ function App() {
     
   return (
     <div className="App">
-    <Header></Header>
+    <ButtonAppBar/>
     <div className='row'>
-      <Main onAdd= {onAdd} products= {products}></Main>
-      <Basket  onAdd ={onAdd} cartItems={cartItems}></Basket>
+      <Main onAdd= {onAdd} products= {products}/>
+      <Basket  onAdd ={onAdd} cartItems={cartItems}/>
     </div>
     </div>
 
   );
 }
 
-export default App;
+export default LandingPage;
