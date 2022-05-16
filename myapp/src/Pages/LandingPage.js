@@ -25,12 +25,11 @@ function LandingPage() {
   return (
     <div className="App">
       <ButtonAppBar />
-      {/* <div className='row'>
+      <div className='row'>
         <Main onAdd={onAdd} products={products} />
         <Basket onAdd={onAdd} cartItems={cartItems} />
-      </div> */}
+      </div>
     </div>
-
   );
 }
 
