@@ -8,8 +8,8 @@ export default function Basket(props) {
       <div>{cartItems.length === 0 && <div>Cart is Empty</div>}</div>
       {cartItems.map((item) => (
         <div key={item.id} className="row">
-          <div>{item.name}</div>
-          <div>
+          <div className="col-2">{item.name}</div>
+          <div className="col-2">
             <button onClick={() => onAdd(item)} className="add">
               +
             </button>
@@ -17,7 +17,11 @@ export default function Basket(props) {
               -
             </button>
           </div>
+          <div className="col-2">
+            {item.qty} x  ${ item.price.toFixed(2)}
+          </div>
         </div>
+
       ))}
     </aside>
   );

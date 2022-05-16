@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import LandingPage from './Pages/index'
+import LandingPage from './Pages/LandingPage'
 import reportWebVitals from './reportWebVitals';
 import {DetailView}  from './Pages/DetailView';
 import { 
