@@ -1,5 +1,6 @@
 import React from "react";
 import Product from "./Product";
+import ProductCard from "./ProductCard";
 import Table from "./ProductsTable";
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -30,7 +31,8 @@ export default function Main(props) {
       <h2>Products</h2>
       <div className="row">
         {products.map((product) => (
-          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+          // <Product key={product.id} product={product} onAdd={onAdd}></Product>
+          <ProductCard key={product.id} product={product} onAdd={onAdd}/>
         ))}
       </div>
     </main>
